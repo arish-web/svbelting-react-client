@@ -17,7 +17,7 @@ export default function HeroCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % banners.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);

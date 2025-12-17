@@ -1,3 +1,4 @@
+import HeroCarousel from "./HeroCarousel";
 export default function Hero() {
   return (
     <section className="relative min-h-screen text-white">
@@ -11,11 +12,10 @@ export default function Hero() {
       />
 
       {/* DARK OVERLAY */}
-      {/* <div className="absolute inset-0 bg-black/70" /> */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/90"></div>
 
       {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 sm:pt-36 md:pt-40 pb-20 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 sm:pt-36 md:pt-40 pb-20 grid md:grid-cols-2 gap-16 items-center">
         {/* LEFT CONTENT */}
         <div>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold uppercase leading-tight">
@@ -30,22 +30,18 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <button className="bg-white text-black px-6 py-3 uppercase tracking-wider font-semibold hover:bg-red-700 hover:text-white transition">
+            <button className="bg-white text-black px-6 py-3 uppercase tracking-wider font-semibold hover:bg-red-700 hover:text-white transition    min-w-[140px] sm:min-w-0">
               View Products
             </button>
-            <button className="border border-white px-6 py-3 uppercase tracking-wider hover:bg-white hover:text-black transition">
+            <button className="border border-white px-6 py-3 uppercase tracking-wider hover:bg-white hover:text-black transition  min-w-[149px] sm:min-w-0">
               Get Enquiry
             </button>
           </div>
         </div>
 
-        {/* RIGHT IMAGE (DESKTOP ONLY) */}
-        <div className="hidden md:block">
-          <img
-            src="https://www.svbelting.com/data1/images/banner6.jpg"
-            alt="Industrial"
-            className="w-[520px] h-[220px] rounded-lg shadow-2xl"
-          />
+        {/* RIGHT IMAGE */}
+        <div className="order-second md:order-last md:flex md:justify-center md:items-center">
+          <HeroCarousel />
         </div>
       </div>
     </section>
