@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "S V Belting",
+  "name": "S V Belting(chennai belting, chennai conveyor belts, chennai PU conveyor belts, chennai PVC conveyor belts, chennai v belts, chennai timing belts, chennai poly v belts, chennai rubber conveyor belts, chennai light duty conveyor belts, chennai heavy duty conveyor belts)",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://www.svbelting.com/favicon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
