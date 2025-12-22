@@ -5,6 +5,7 @@ import Applications from "../components/Applications";
 import Customers from "../components/Customers/Customers";
 import Navbar from "../components/Navbar";
 import InfoSection from "../components/InfoSection";
+import IndustriesWeServe from "../components/IndustriesWeServe";
 
 export default function Home() {
   return ( 
@@ -19,8 +20,10 @@ export default function Home() {
           {/* LEFT: PRODUCTS + PROMO */}
           <div className="lg:col-span-9">
             <FeaturedProducts />
+            <IndustriesWeServe />
             <PromoSection />
           </div>
+          
 
           {/* RIGHT: APPLICATIONS */}
           <div className="lg:col-span-3">
